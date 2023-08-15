@@ -14,9 +14,9 @@ def a_plus_abs_b(a, b):
     3
     """
     if b < 0:
-        f = _____
+        f = sub
     else:
-        f = _____
+        f = add
     return f(a, b)
 
 
@@ -91,3 +91,14 @@ def hailstone(n):
     1
     """
     "*** YOUR CODE HERE ***"
+
+
+
+
+
+
+if __name__ == "__main__":
+    import doctest
+#    doctest.testmod()
+    doctest.run_docstring_examples(a_plus_abs_b, globals(), True)
+
