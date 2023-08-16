@@ -95,8 +95,18 @@ def hailstone(n):
     1
     """
     "*** YOUR CODE HERE ***"
-
-
+    steps = 1
+    print(n)
+    while n != 1:
+        if n % 2 == 0:
+            n = n//2
+            print(n)
+            steps += 1
+        else:
+            n = n*3+1
+            print(n)
+            steps +=1
+    return steps
 
 
 
@@ -106,3 +116,4 @@ if __name__ == "__main__":
     doctest.run_docstring_examples(a_plus_abs_b, globals(), True)
     doctest.run_docstring_examples(two_of_three, globals(), True)
     doctest.run_docstring_examples(largest_factor, globals(), True)
+    doctest.run_docstring_examples(hailstone, globals(), True)
