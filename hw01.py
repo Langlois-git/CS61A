@@ -69,6 +69,10 @@ def largest_factor(n):
     1
     """
     "*** YOUR CODE HERE ***"
+    count = n-1
+    while n % count != 0:
+        count -= 1
+    return count
 
 
 def hailstone(n):
@@ -101,4 +105,4 @@ if __name__ == "__main__":
 #    doctest.testmod()
     doctest.run_docstring_examples(a_plus_abs_b, globals(), True)
     doctest.run_docstring_examples(two_of_three, globals(), True)
-
+    doctest.run_docstring_examples(largest_factor, globals(), True)
