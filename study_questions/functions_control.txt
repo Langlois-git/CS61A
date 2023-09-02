@@ -134,3 +134,113 @@ False
 Error
 -------------------------------------------------------------------------
 
+s = 2
+
+def hat(s):
+    while s > 0:
+        whoos(s)
+        s = s - 1
+    return whoos(s)
+
+def someones(their, hat):
+    his, her = their, hat
+    hat = print(his or her) and her or his
+    if hat:
+        return 'hat'
+
+def whoos(hat):
+    return print(hat)
+
+>>> print(s) or 1 / 0
+2
+>>> None or 1 / 0
+Error
+
+>>> 0 or 2 == True and print(5)
+>>> 0 or 2 == True and print(5)
+>>> 2 == True and print(5)
+>>> False and print(5)
+False
+
+>>> her, cat = 'her', print('theirs') or 'his' <-- cat is bound to 'his'
+thiers
+
+>>> her, cat = 'her', 'his'
+def someones(their, hat):
+    his, her = their, hat
+    hat = print(his or her) and her or his
+    if hat:
+        return 'hat'
+
+>>> someones('her', 'his')
+>>> his, her = 'her', 'his'
+>>> hat = print('her' or 'his') and 'his' or 'her'
+her
+>>> hat = None and 'his' or 'her'
+>>> hat = None or 'her'
+>>> hat = 'her' <-- this makes hat True in a boolean context
+>>>  if hat:
+        return 'hat'
+'hat'
+
+>>> s = 2
+>>> hat(2)
+    while 0 > 0:
+        whoos(1)
+        s = s - 1
+    return whoos(s)
+def whoos(0):
+    return print(0)
+
+2
+1
+0
+
+>>> print(whoos(hat), someones(cat, hat))
+s = 2
+
+def hat(s):
+    while s > 0:
+        whoos(s)
+        s = s - 1
+    return whoos(s)
+
+def someones(their, hat):
+    his, her = their, hat
+    hat = print(his or her) and her or his
+    if hat:
+        return 'hat'
+
+def whoos(hat):
+    return print(hat)
+
+>>> print(whoos(hat), someones(cat, hat))
+>>> print()
+
+1	s = 2
+2	
+3	def hat(s):
+4	    while s > 0:
+5	        whoos(s)
+6	        s = s - 1
+7	    return whoos(s)
+8	
+9	def someones(their, hat):
+10	    his, her = their, hat
+11	    hat = print(his or her) and her or his
+12	    if hat:
+13	        return 'hat'
+14	
+15	def whoos(hat):
+16	    return print(hat)
+17	
+18	her, cat = 'her', print('theirs') or 'his'
+19	    
+20	print(whoos(hat), someones(cat, hat))
+
+theirs
+<function hat at 0x7f768da9fe18>
+his
+None hat
+
+
