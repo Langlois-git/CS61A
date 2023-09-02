@@ -109,4 +109,28 @@ True
 >>> print(print(3 - 17), wan1)
 >>> print(print(-14), wan1)
 -14
->>> print(print(-14), wan1)
+>>> print(None, wan1)
+None Function
+
+>>> derek(1, 1, 2)
+>>> print(wan1(1, wan11(1, 1)))
+    return wan11(one, wan1)
+>>> print(wan1(1, 1))
+    return wan11(one, wan1)
+>>> print(True)
+True
+>>> return wan11(2, Function)
+>>> return Function / 2
+Error
+
+>>> derek(wan, 2, one)
+>>> print(wan1(3, wan11(2, 1)))
+    return wan11(1, wan1)
+>>> print(wan1(3, 0.5))
+    return wan11(1, wan1)
+>>> print(False)
+False
+>>> return wan11(1, wan1)
+Error
+-------------------------------------------------------------------------
+
