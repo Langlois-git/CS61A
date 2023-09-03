@@ -243,4 +243,26 @@ theirs
 his
 None hat
 
+-----------------------------------------------------------------------------
+
+def announce(score, inning):
+    hits = score * 3 % inning - 1
+    print('The Giants have ' + str(score) + ' runs!')
+    if hits < 2:
+        jumbotron_text = print('That\'s the end of the inning!')
+        inning = inning + 1
+        return jumbotron_text
+    else:
+        score = score + hits % 3
+        crowd_noise = print('The Giants now have: ' + str(score))
+        print(str(crowd_noise))
+    return score
+
+def player(hits, inning):
+    if hits < 2:
+        print('I need to practice in the batting cage!')
+    score = hits * 2 + 1
+    saying = announce(score, inning)
+    return saying * 2
+
 
